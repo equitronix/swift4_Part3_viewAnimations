@@ -16,6 +16,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var menuLabel: UIButton!;
     @IBOutlet weak var menuView : UIView!;
     @IBOutlet weak var stackView: UIStackView!;
+    @IBOutlet weak var statementLabel: UILabel!;
+    @IBAction func buttonClicked(_ sender: UIButton){
+        if statementLabel.alpha != 1 {
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 0, options: .curveEaseIn, animations: {
+                self.statementLabel.alpha = 1.0;
+            }) { (UIViewAnimatingPosition) in
+                print(UIViewAnimatingPosition);
+            }
+        }else{
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 0, options: .curveEaseIn, animations: {
+                self.statementLabel.alpha = 0.2;
+            }) { (UIViewAnimatingPosition) in
+                print(UIViewAnimatingPosition);
+            }
+        }
+    }
     var icon1: UIView!;
     
     

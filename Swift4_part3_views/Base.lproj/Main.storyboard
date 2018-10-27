@@ -65,10 +65,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgf-cV-GUa">
+                                        <rect key="frame" x="38" y="102" width="284" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Click me to fade out or in the label above."/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuK-r5-ADG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="wgf-cV-GUa" firstAttribute="leading" secondItem="cf9-fE-6oE" secondAttribute="leading" constant="38" id="BBe-9c-JaQ"/>
+                                    <constraint firstItem="wgf-cV-GUa" firstAttribute="top" secondItem="y0X-7N-A7k" secondAttribute="bottom" constant="81.5" id="BuL-Mv-rOF"/>
                                     <constraint firstItem="y0X-7N-A7k" firstAttribute="centerX" secondItem="cf9-fE-6oE" secondAttribute="centerX" id="DKQ-5q-FWV"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wgf-cV-GUa" secondAttribute="trailing" constant="20" symbolic="YES" id="LEE-4W-Ohn"/>
                                     <constraint firstItem="y0X-7N-A7k" firstAttribute="top" secondItem="cf9-fE-6oE" secondAttribute="top" id="qtm-ac-Ntd"/>
                                 </constraints>
                             </view>
@@ -91,11 +103,12 @@
                         <outlet property="menuViewHeightConstraint" destination="SzL-27-wX9" id="222-q1-N0j"/>
                         <outlet property="stackBottomCons" destination="jsB-D7-PQ5" id="omk-pT-UeM"/>
                         <outlet property="stackView" destination="eoJ-SE-Jch" id="OGG-OT-QUx"/>
+                        <outlet property="statementLabel" destination="y0X-7N-A7k" id="OXW-LO-gSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="50.824587706146929"/>
+            <point key="canvasLocation" x="61.600000000000001" y="-205.54722638680661"/>
         </scene>
     </scenes>
     <resources>
