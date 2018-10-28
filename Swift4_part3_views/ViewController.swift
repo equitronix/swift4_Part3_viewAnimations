@@ -18,11 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!;
     @IBOutlet weak var statementLabel: UILabel!;
     @IBOutlet weak var newStatementLabel: UILabel!;
+    @IBOutlet weak var oldLabelXConstraint: NSLayoutConstraint!;
+    @IBOutlet weak var newLabelXCostraint: NSLayoutConstraint!;
+    
     @IBAction func buttonClicked(_ sender: UIButton){
         if statementLabel.alpha != 1 {
             UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 0, options: .curveEaseIn, animations: {
                 self.statementLabel.alpha = 1.0;
                 self.newStatementLabel.alpha = 0;
+                self.oldLabelXConstraint.constant = 0;
+                self.newLabelXCostraint.constant = -self.view.frame.width;
+                self.view.layoutIfNeeded();
             }) { (UIViewAnimatingPosition) in
                 print(UIViewAnimatingPosition);
             }
@@ -30,6 +36,9 @@ class ViewController: UIViewController {
             UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 0, options: .curveEaseIn, animations: {
                 self.statementLabel.alpha = 0;
                 self.newStatementLabel.alpha = 1;
+                self.oldLabelXConstraint.constant = self.view.frame.width;
+                self.newLabelXCostraint.constant = 0;
+                self.view.layoutIfNeeded();
             }) { (UIViewAnimatingPosition) in
                 print(UIViewAnimatingPosition);
             }
@@ -75,7 +84,7 @@ class ViewController: UIViewController {
         icon1.translatesAutoresizingMaskIntoConstraints = false;
         self.view.bringSubviewToFront(menuView);
         menuView.bringSubviewToFront(menuLabel);
-        
+        newLabelXCostraint.constant = -view.frame.width;
         // Do any additional setup after loading the view, typically from a nib.
     }
     

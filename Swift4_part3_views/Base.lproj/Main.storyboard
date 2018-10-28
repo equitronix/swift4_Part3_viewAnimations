@@ -109,7 +109,9 @@
                         <outlet property="menuLabel" destination="wRG-CY-BgS" id="vuo-qv-KUM"/>
                         <outlet property="menuView" destination="JQK-I0-amv" id="5wU-A2-8mN"/>
                         <outlet property="menuViewHeightConstraint" destination="SzL-27-wX9" id="222-q1-N0j"/>
+                        <outlet property="newLabelXCostraint" destination="9pd-BK-jpb" id="P04-tW-cbn"/>
                         <outlet property="newStatementLabel" destination="JHr-rt-fqO" id="hHN-0r-rb6"/>
+                        <outlet property="oldLabelXConstraint" destination="DKQ-5q-FWV" id="A8S-VK-hEb"/>
                         <outlet property="stackBottomCons" destination="jsB-D7-PQ5" id="omk-pT-UeM"/>
                         <outlet property="stackView" destination="eoJ-SE-Jch" id="OGG-OT-QUx"/>
                         <outlet property="statementLabel" destination="y0X-7N-A7k" id="OXW-LO-gSF"/>
