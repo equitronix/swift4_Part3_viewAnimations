@@ -74,9 +74,17 @@
                                             <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuK-r5-ADG"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The new statement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHr-rt-fqO">
+                                        <rect key="frame" x="114" y="0.0" width="147.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="JHr-rt-fqO" firstAttribute="top" secondItem="cf9-fE-6oE" secondAttribute="top" id="5jP-oZ-KgX"/>
+                                    <constraint firstItem="JHr-rt-fqO" firstAttribute="centerX" secondItem="cf9-fE-6oE" secondAttribute="centerX" id="9pd-BK-jpb"/>
                                     <constraint firstItem="wgf-cV-GUa" firstAttribute="leading" secondItem="cf9-fE-6oE" secondAttribute="leading" constant="38" id="BBe-9c-JaQ"/>
                                     <constraint firstItem="wgf-cV-GUa" firstAttribute="top" secondItem="y0X-7N-A7k" secondAttribute="bottom" constant="81.5" id="BuL-Mv-rOF"/>
                                     <constraint firstItem="y0X-7N-A7k" firstAttribute="centerX" secondItem="cf9-fE-6oE" secondAttribute="centerX" id="DKQ-5q-FWV"/>
@@ -101,6 +109,7 @@
                         <outlet property="menuLabel" destination="wRG-CY-BgS" id="vuo-qv-KUM"/>
                         <outlet property="menuView" destination="JQK-I0-amv" id="5wU-A2-8mN"/>
                         <outlet property="menuViewHeightConstraint" destination="SzL-27-wX9" id="222-q1-N0j"/>
+                        <outlet property="newStatementLabel" destination="JHr-rt-fqO" id="hHN-0r-rb6"/>
                         <outlet property="stackBottomCons" destination="jsB-D7-PQ5" id="omk-pT-UeM"/>
                         <outlet property="stackView" destination="eoJ-SE-Jch" id="OGG-OT-QUx"/>
                         <outlet property="statementLabel" destination="y0X-7N-A7k" id="OXW-LO-gSF"/>
