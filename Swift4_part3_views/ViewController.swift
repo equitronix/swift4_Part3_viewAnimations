@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         self.view.bringSubviewToFront(menuView);
         menuView.bringSubviewToFront(menuLabel);
         newLabelXCostraint.constant = -view.frame.width;
-        // Do any additional setup after loading the view, typically from a nib.
+        print("file: \(#file) function: \(#function) line: \(#line) col: \(#column)");
     }
     
     
